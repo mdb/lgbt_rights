@@ -1,0 +1,8 @@
+#! /bin/sh
+
+echo UPDATING NODEATHON
+
+npm update
+wget -r -nH -nd -Ppublic/javascripts/contrib http://documentcloud.github.com/underscore/underscore-min.js
+
+echo UPDATE COMPLETE
