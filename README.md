@@ -1,19 +1,21 @@
-##Nodeathon
+#Nodeathon
 
-#Overview
+###Overview
 A basic Node.js app setup to save time at a hackathon. 
 
-#Installation
+###Installation
 Assuming you already have Node installed:
 
 1. Clone the repo
 
-#Included Libraries
+###Included Libraries
 Node
+
 - Stylus
 - Jade
 - Request
 
 JS
+
 - Underscore
 - jQuery
