@@ -8,7 +8,8 @@ Assuming you already have Node installed:
 
 1. Clone the repo to your workspace
 2. Rename the `nodeathon` directory: `mv nodeathon my_project`
-3. Update the remote repo url: `git remote set-url my_project git://github.com/user/my_project.git`
+3. Update the remote repo url: `git remote set-url origin git@github.com:user/my_project.git`
+4. Push to the master branch: `git push origin master'
 
 ###Included Libraries
 Node
