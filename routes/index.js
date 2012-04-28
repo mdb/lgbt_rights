@@ -15,11 +15,8 @@ module.exports = function(app) {
   });
   app.post('/load', function(req, res) {
     db.load(req.body, function(err, data){
-      if (err){
-        res.send(err);
-      } else {
-        res.send(data);
-      }
+      if (err) return res.send(err);
+      res.send(data);
     });
   });
 };

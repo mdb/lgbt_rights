@@ -19,9 +19,12 @@ exports.rights = function(state, county, city, fn){
 };
 
 // takes in a json file and loads it into redis
-exports.load = function(obj, fn){
-  obj.forEach(function(item){ 
-    redis.set(item.id, JSON.stringify(item));
+exports.load = function(items, fn){
+  var pending = items.length;
+  items.forEach(function(item){ 
+    redis.set(item.id, JSON.stringify(item), function(err) {
+      if (err) fn(err);
+      --pending || fn(null, {success: true});
+    });
   });
-  //fn(null, obj);
 };
