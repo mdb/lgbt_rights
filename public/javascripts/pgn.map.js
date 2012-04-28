@@ -27,6 +27,20 @@ PGN.map = (function ($) {
       }
     },
 
+    reverseGeocode: function(location) {
+      geocoder.geocode({
+        'latlng' : location.lat + ',' + location.lng 
+      }, function (results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+          console.log(results)
+        } else {
+          console.log("Error" + status);
+        }
+      });
+    },
+
+    }
+
   };
 
   return _self;
