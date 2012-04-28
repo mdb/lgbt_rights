@@ -19,23 +19,23 @@ PGN.core = (function ($) {
           case 'marrage':
             return 'Marriage';
           case 'discrimination':
-            return 'Discrimination protection';
+            return 'Discrimination protections';
           case 'domestic_partnership':
             return 'Domestic-partner registry';
           case 'civil union':
             return 'Civil Union';
           case 'employment':
-            return 'Employment discrimination protection';
+            return 'Employment discrimination protections';
           case 'adoption':
-            return 'Adoption Rights';
+            return 'Adoption rights';
           case 'legal_gender_change':
             return 'Legal gender change';
           case 'hate_crimes':
-            return 'Hate crimes protection';
+            return 'Hate crimes protections';
           case 'bullying_protection':
             return 'Bullying protection';
           case 'housing':
-            return 'Housing discrimination protection';
+            return 'Housing discrimination protections';
         }
       },
 

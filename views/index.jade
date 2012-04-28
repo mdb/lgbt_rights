@@ -20,7 +20,7 @@ block scripts
         PGN.core.clear();
         PGN.geo.getUserLocation(function () {
           PGN.geo.reverseGeocode(PGN.userLocation, function (response) {
-            $('h2.user-location').html(response[0].formatted_address.replace(/,/g, '<br />'));
+            $('h2.user-location').html('Current Location: <br />' + response[0].formatted_address.replace(/,/g, '<br />'));
             var params = PGN.geo.parseResp(response[0]);
             PGN.core.getData(params);
           });
@@ -32,7 +32,7 @@ block scripts
 
         var inputVal = $('form.address-search input').val();
         PGN.geo.geocode(inputVal, function (response) {
-          $('h2.user-location').html(response[0].formatted_address.replace(/,/g, '<br />'));
+          $('h2.user-location').html('Current Location: <br />' + response[0].formatted_address.replace(/,/g, '<br />'));
           var params = PGN.geo.parseResp(response[0]);
           PGN.core.getData(params);
         });
