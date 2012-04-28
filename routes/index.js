@@ -13,4 +13,13 @@ module.exports = function(app) {
       res.send(data);
     });
   });
+  app.post('/load', function(req, res) {
+    db.load(req.body, function(err, data){
+      if (err){
+        res.send(err);
+      } else {
+        res.send(data);
+      }
+    });
+  });
 };
