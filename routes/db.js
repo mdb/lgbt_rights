@@ -14,7 +14,8 @@ exports.rights = function(state, county, city, fn){
 
 // takes in a json file and loads it into redis
 exports.load = function(json, fn){
-	
+	var obj = JSON.parse(json);
+	fn(null, obj);
 }
 
 function state(state){
