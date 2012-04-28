@@ -28,7 +28,7 @@ PGN.core = (function ($) {
             return 'Employment discrimination protection';
           case 'adoption':
             return 'Adoption Rights';
-          case 'legal_gener_change':
+          case 'legal_gender_change':
             return 'Legal gender change';
           case 'hate_crimes':
             return 'Hate crimes protection';
