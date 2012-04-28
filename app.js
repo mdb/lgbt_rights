@@ -29,7 +29,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
+routes(app);
 
 http.createServer(app).listen(port);
 
