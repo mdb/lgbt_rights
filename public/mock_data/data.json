@@ -1,0 +1,42 @@
+{
+  "national":
+  {
+    "name": "US",
+    "rights" : {
+      "discrimination": {
+        "orientation": false,
+        "identity": false
+      }
+    }
+  },
+  "states":
+  {
+    "name": "PA",
+    "rights": {
+      "discrimination": {
+        "orientation": false,
+        "identity": false
+      }
+    }
+  },
+  "county":
+  {
+    "name": "Philadelphia",
+    "rights": {
+      "discrimination": {
+        "orientation": false,
+        "identity": false
+      }
+    }
+  },
+  "city":
+  {
+    "name": "Philadelphia",
+    "rights": {
+      "discrimination": {
+        "orientation": true,
+        "identity": true
+      }
+    }
+  }
+}
