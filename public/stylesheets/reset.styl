@@ -1,0 +1,106 @@
+// Basic reset
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6
+p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd
+q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, 
+aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, 
+section, summary, time, mark, audio, video 
+  margin 0
+  padding 0
+  border 0
+  font-size 100%
+  font-style normal
+  font inherit
+  vertical-align baseline
+
+// HTML5 elements
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section 
+  display block
+
+[hidden]
+  display none
+
+// Clean up html element
+html
+  overflow-y scroll
+  -webkit-text-size-adjust 100% 
+  -ms-text-size-adjust 100%
+
+// Selection styling from HTML5 Boilerplate
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection
+  background #fe57a1
+  color #fff
+  text-shadow none
+
+::selection
+  background #fe57a1
+  color #fff 
+  text-shadow none
+
+// Continue with general reset styles
+
+body
+  line-height 1.5
+  background white
+
+table
+  border-collapse separate
+  border-spacing 0
+
+// float:none prevents the span-x classes from breaking table-cell display
+caption
+th
+td
+  text-align left
+  font-weight normal
+  float none !important
+
+table
+th
+td
+  vertical-align middle
+
+// Remove possible quote marks (") from <q>, <blockquote>.
+blockquote:before
+blockquote:after
+q:before
+q:after
+  content ''
+
+blockquote
+q
+  quotes "" ""
+  quotes none
+
+// Remove annoying border on linked images.
+a img
+  border none
+
+// Remember to define your own focus styles!
+:focus
+  outline 0
+
+// Embedded content, from HTML5 Boilerplate
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+img
+  border 0 
+  -ms-interpolation-mode bicubic
+  vertical-align middle
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+svg:not(:root)
+  overflow hidden
