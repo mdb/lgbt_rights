@@ -3,7 +3,7 @@ if (typeof PGN === 'undefined' || !PGN) {
 }
 
 if (typeof PGN.core === 'undefined' || !PGN.core) {
-  var PGN.core = {};
+  PGN.core = {};
 }
 
 PGN.core = (function ($) {
