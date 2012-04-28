@@ -18,11 +18,15 @@ PGN.core = (function ($) {
         var list = '';
 
         $.each(data, function (key, value) {
-          list += '<li class="header">' + value.name + ' (' + key + ')<ul>';
-          $.each(value.rights, function (key, value) {
-            list += '<li class="' + !!value +'">' + key + '</li>';
-          });
-          list += '</ul></li>';
+          if (value) {
+            var id = value.id.split(':');
+            var name = id[id.length - 1];
+            list += '<li class="header">' + name + ' (' + key + ')<ul>';
+            $.each(value.rights, function (key, value) {
+              list += '<li class="' + !!value +'">' + key + '</li>';
+            });
+            list += '</ul></li>';
+          }
         });
 
         return list; //_.template(template, {result: data})
