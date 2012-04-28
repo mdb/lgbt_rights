@@ -74,7 +74,14 @@ PGN.geo = (function ($) {
         }
       });
 
-      return {'city': city, 'county': county, 'state': state, 'country': country};
+      var result = { 
+        'city': city, 
+        'county': county, 
+        'state': state,
+        'country': country
+      };
+
+      return result;
     }
   };
 
