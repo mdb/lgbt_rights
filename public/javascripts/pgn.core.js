@@ -2,8 +2,8 @@ if (typeof PGN === 'undefined' || !PGN) {
   var PGN = {};
 }
 
-if (typeof PGN === 'undefined' || !PGN) {
-  var PGN = {};
+if (typeof PGN.core === 'undefined' || !PGN.core) {
+  var PGN.core = {};
 }
 
 PGN.core = (function ($) {

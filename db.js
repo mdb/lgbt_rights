@@ -5,7 +5,7 @@ if (process.env.REDISTOGO_URL) {
 }
 
 exports.rights = function(state, county, city, fn){
-	var data = {};
+  var data = {};
   redis.get(state, function(err, val) {
     data.state = val;
     redis.get(state + ':' + county, function(err, val) {
@@ -20,6 +20,9 @@ exports.rights = function(state, county, city, fn){
 
 // takes in a json file and loads it into redis
 exports.load = function(json, fn){
-	var obj = JSON.parse(json);
-	fn(null, obj);
+  var obj = JSON.parse(json);
+  obj.forEach(function(item){ 
+    redis.set(item.id, JSON.stringify(item));
+  });
+  //fn(null, obj);
 };
