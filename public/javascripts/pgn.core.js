@@ -30,7 +30,7 @@ PGN.core = (function ($) {
 
       getData: function () {
         $.ajax({
-          url: '/mock_data/data.json',
+          url: '/rights?state=' + params.state + '&city=' + params.city + '&county=' + params.county,
           dataType: 'json',
           success: function (data) {
             console.log(data);
