@@ -38,9 +38,43 @@ header
       display: block
       font-weight: bold
       text-decoration: none
+  img
+      display: block
+      margin: 0 auto
 
 .content
   padding: 0 3%
+
+  h2
+    line-height: 1.2em
+    margin-bottom: 10px
+
+  ul.rights
+    li.header
+      font-weight: bold
+
+      ul
+        border-top: 1px solid $gray
+        margin-bottom: 10px
+
+        li
+          font-weight: normal
+
+          &:before {
+            content: ''
+            width: 10px
+            height: 10px
+            display: inline-block
+            margin-right: 5px
+          }
+
+          &.false:before {
+            background: red
+          }
+
+          &.true:before {
+            background: green
+          }
 
 // search form
 input
