@@ -11,31 +11,21 @@ PGN.core = (function ($) {
 
   _self = {
       injectRights: function (data) {
-        $('.content').append(_self.buildRightsTemplate(data));
+        $('.content ul.rights').append(_self.buildRightsTemplate(data));
       },
 
       buildRightsTemplate: function (data) {
-        var template = '\
-          <h3><%= rights.city.name %></h3>\
-          <ul>\
-            <li>TODO</li>\
-          </ul>\
-          <h3><%= rights.county.name %></h3>\
-          <ul>\
-            <li>TODO</li>\
-          </ul>\
-          <h3>National</h3>\
-          <ul>\
-            <li>TODO</li>\
-          </ul>\
-          <h3>States</h3>\
-          <ul>\
-            <li>TODO</li>\
-            <li>Foo</li>\
-          </ul>\
-        '; 
+        var list = '';
 
-        return _.template(template, {rights: data})
+        $.each(data, function (key, value) {
+          list += '<li class="header">' + value.name + ' (' + key + ')<ul>';
+          $.each(value.rights, function (key, value) {
+            list += '<li class="' + !!value +'">' + key + '</li>';
+          });
+          list += '</ul></li>';
+        });
+
+        return list; //_.template(template, {result: data})
       },
 
       getData: function () {
