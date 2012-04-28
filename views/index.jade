@@ -16,8 +16,10 @@ block scripts
       });
       $('span.button.location').click(function() {
         PGN.map.getUserLocation(function () {
-          console.log(PGN.userLocation);
-          $('h2.user-location').html(PGN.userLocation);
+          PGN.map.reverseGeocode(PGN.userLocation, function (response) {
+            $('h2.user-location').html(response[0].formatted_address);
+          });
         });
       });
+      //PGN.core.injectRights();
     });
