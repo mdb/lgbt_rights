@@ -19,7 +19,7 @@ block scripts
       $('span.button.location').click(function() {
         PGN.geo.getUserLocation(function () {
           PGN.geo.reverseGeocode(PGN.userLocation, function (response) {
-            $('h2.user-location').html(response[0].formatted_address);
+            $('h2.user-location').html(response[0].formatted_address.replace(/,/g, '<br />'));
             PGN.core.getData(response);
           });
         });
