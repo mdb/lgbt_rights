@@ -28,7 +28,7 @@ PGN.core = (function ($) {
         return list; //_.template(template, {result: data})
       },
 
-      getData: function () {
+      getData: function (params) {
         $.ajax({
           url: '/rights?state=' + params.state + '&city=' + params.city + '&county=' + params.county,
           dataType: 'json',
