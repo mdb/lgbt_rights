@@ -37,8 +37,6 @@ PGN.map = (function ($) {
           console.log("Error" + status);
         }
       });
-    },
-
     }
 
   };
