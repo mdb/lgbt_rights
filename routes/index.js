@@ -1,7 +1,5 @@
-
-/*
- * GET home page.
- */
+var db = require('../db');
+var express = require('express');
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
@@ -10,8 +8,18 @@ module.exports = function(app) {
       subtitle: 'Find your rights in Pennsylvania'
     });
   });
-  app.get('/api', function(req, res) {
-    var body = {api: "goes here"};
-    res.send(body);
+  app.get('/rights', express.query(), function(req, res) {
+    db.rights(req.query.state, req.query.county, req.query.city, function(err, data) {
+      res.send(data);
+    });
+  });
+  app.post('/load', function(req, res) {
+    db.load(req.body, function(err, data){
+      if (err){
+        res.send(err);
+      } else {
+        res.send(data);
+      }
+    });
   });
 };
