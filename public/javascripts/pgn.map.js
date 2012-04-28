@@ -36,10 +36,22 @@ PGN.map = (function ($) {
         if (status === google.maps.GeocoderStatus.OK) {
           if (typeof callback === "function" && callback) { callback(results); }
         } else {
-          if (typeof callback === "function" && callback) { callback(error); }
+          if (typeof callback === "function" && callback) { callback(status); }
         }
       });
-    }
+    },
+
+    geocode: function(location, callback) {
+      geocoder.geocode({
+        'address' : location
+      }, function (results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+          if (typeof callback === "function" && callback) { callback(results); }
+        } else {
+          if (typeof callback === "function" && callback) { callback(status); }
+        }
+      });
+    },
 
   };
 
