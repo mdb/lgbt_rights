@@ -8,7 +8,7 @@ PGN.map = (function ($) {
 
   _self = {
 
-    getUserLocation: function () {
+    getUserLocation: function (callback) {
       // Try W3C Geolocation
       if (navigator.geolocation) { 
         //geolocation supported
@@ -17,6 +17,8 @@ PGN.map = (function ($) {
           //save position
           PGN.userLocation = position.coords;
 
+          if (typeof callback === "function" && callback) { callback(); }
+
         }, function() { 
           //geolocation denied  
         });
@@ -24,8 +26,6 @@ PGN.map = (function ($) {
         //geolocation not supported
       }
     },
-
-    
 
   };
 
