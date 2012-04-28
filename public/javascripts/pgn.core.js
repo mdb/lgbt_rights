@@ -69,6 +69,11 @@ PGN.core = (function ($) {
             console.log(data);
           }
         });
+      },
+
+      clear: function () {
+        $('h2.user-location').html('');
+        $('ul.rights li').remove();
       }
   };
 
