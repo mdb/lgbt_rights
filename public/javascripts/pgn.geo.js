@@ -53,6 +53,25 @@ PGN.geo = (function ($) {
       });
     },
 
+    parseResp: function(resp) {
+      var city, 
+        county,
+        state;
+
+      _.each(resp.address_components, function(i){
+        if (i.types[0] === 'locality') { 
+          city = i.long_name;
+        }
+        if (i.types[0] === 'administrative_area_level_2') { 
+          county = i.long_name;
+        }
+        if (i.types[0] === 'administrative_area_level_1') { 
+          state = i.short_name;
+        }
+      });
+
+      return { 'city': city, 'county': county, 'state': state};
+    }
   };
 
   return _self;
