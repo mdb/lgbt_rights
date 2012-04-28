@@ -4,7 +4,8 @@ if (typeof PGN === 'undefined' || !PGN) {
 
 PGN.map = (function ($) {
   
-  var _self;
+  var _self,
+    geocoder = new google.maps.Geocoder();
 
   _self = {
 
@@ -27,14 +28,15 @@ PGN.map = (function ($) {
       }
     },
 
-    reverseGeocode: function(location) {
+    reverseGeocode: function(location, callback) {
+      var latLng = new google.maps.LatLng(location.latitude, location.longitude)
       geocoder.geocode({
-        'latlng' : location.lat + ',' + location.lng 
+        'latLng' : latLng
       }, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
-          console.log(results)
+          if (typeof callback === "function" && callback) { callback(results); }
         } else {
-          console.log("Error" + status);
+          if (typeof callback === "function" && callback) { callback(error); }
         }
       });
     }
