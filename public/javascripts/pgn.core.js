@@ -11,7 +11,7 @@ PGN.core = (function ($) {
 
   _self = {
       injectRights: function (data) {
-        $('body').append(_self.buildRightsTemplate(data));
+        $('.content').append(_self.buildRightsTemplate(data));
       },
 
       buildRightsTemplate: function (data) {
