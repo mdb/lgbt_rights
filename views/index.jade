@@ -29,6 +29,7 @@ block scripts
 
       $('form.address-search span.button').click(function () {
         event.preventDefault();
+        PGN.core.clear();
 
         var inputVal = $('form.address-search input').val();
         PGN.geo.geocode(inputVal, function (response) {
