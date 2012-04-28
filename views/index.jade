@@ -3,6 +3,7 @@ extends layout
 block content
   span.button.location Use My Location
   span.button.address Search By Address
+  h2.user-location
   form.hidden.address-search
     input
     span.button Search
@@ -12,6 +13,12 @@ block scripts
     $(document).ready(function() {
       $('span.button.address').click(function() {
         $('form.address-search').fadeIn('fast');
+      });
+      $('span.button.location').click(function() {
+        PGN.map.getUserLocation(function () {
+          console.log(PGN.userLocation);
+          $('h2.user-location').html(PGN.userLocation);
+        });
       });
     });
 
