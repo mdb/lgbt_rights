@@ -50,30 +50,44 @@ header
     margin-bottom: 10px
 
   ul.rights
+    list-style-type: none
+
     li.header
+      padding-top: 10px
       font-weight: bold
+      clear: left
+      overflow: hidden
 
       ul
         border-top: 1px solid $gray
+        padding-top: 5px
         margin-bottom: 10px
+        list-style-type: none
 
         li
+          clear: left
+          padding: 3px 0
           font-weight: normal
+          line-height: 20px
+          float: left
 
           &:before {
+            background: url('/images/icons.png') no-repeat 0 0
+            line-height: 20px
             content: ''
-            width: 10px
-            height: 10px
+            width: 22px
+            height: 20px
             display: inline-block
             margin-right: 5px
+            float: left
           }
 
           &.false:before {
-            background: red
+            background-position: 0 0
           }
 
           &.true:before {
-            background: green
+            background-position: -28px 0 
           }
 
 // search form
