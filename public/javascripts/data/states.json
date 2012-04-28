@@ -1,0 +1,173 @@
+[
+  {"id" : "PA",
+    "type" : "state",
+    "rights" : {
+    	"adoption" : true,
+    	"legal_gender_change" : true,
+    	"hate_crimes" : false,
+    	"discrimination" : false,
+    	"bullying_protection" : false
+    }
+  },
+  {"id" : "CA",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "CO",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "CT",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "DE",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "HI",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "IN",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "IL",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "IA",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "ME",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "MD",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "MA",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "MI",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "MN",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "NV",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "NH",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "NJ",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "NM",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "NY",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "OR",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "RI",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "VT",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  },
+  {"id" : "WA",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : false
+    }
+  },
+  {"id" : "WI",
+    "type" : "state",
+    "rights" : { 
+    	"employment" : true,
+    	"housing" : true
+    }
+  }
+]
