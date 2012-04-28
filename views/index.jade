@@ -13,6 +13,7 @@ block scripts
   script(type='text/javascript')
     $(document).ready(function() {
       $('span.button.address').click(function() {
+        PGN.core.clear();
         $('form.address-search').fadeIn('fast');
       });
       
