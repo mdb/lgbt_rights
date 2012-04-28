@@ -2,7 +2,7 @@ if (typeof PGN === 'undefined' || !PGN) {
   var PGN = {};
 }
 
-PGN.map = (function ($) {
+PGN.geo = (function ($) {
   
   var _self,
     geocoder = new google.maps.Geocoder();
