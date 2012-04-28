@@ -20,7 +20,8 @@ block scripts
         PGN.geo.getUserLocation(function () {
           PGN.geo.reverseGeocode(PGN.userLocation, function (response) {
             $('h2.user-location').html(response[0].formatted_address.replace(/,/g, '<br />'));
-            PGN.core.getData(response);
+            var params = PGN.geo.parseResp(response[0]);
+            PGN.core.getData(params);
           });
         });
       });
@@ -28,6 +29,7 @@ block scripts
       $('form.address-search span.button').click(function () {
         var inputVal = $('form.address-search input').val();
         PGN.geo.geoCode(inputVal, function (response) {
+          $('h2.user-location').html(response[0].formatted_address.replace(/,/g, '<br />'));
           var params = PGN.geo.parseResp(response[0]);
           PGN.core.getData(params);
         });
