@@ -14,12 +14,20 @@ block scripts
       $('span.button.address').click(function() {
         $('form.address-search').fadeIn('fast');
       });
+      
       $('span.button.location').click(function() {
-        PGN.map.getUserLocation(function () {
-          PGN.map.reverseGeocode(PGN.userLocation, function (response) {
+        PGN.geo.getUserLocation(function () {
+          PGN.geo.reverseGeocode(PGN.userLocation, function (response) {
             $('h2.user-location').html(response[0].formatted_address);
+            PGN.core.getData(response);
           });
         });
       });
-      //PGN.core.injectRights();
+
+      $('form.address-search span.button').click(function () {
+        var inputVal = $('form.address-search input').val();
+        PGN.geo.geoCode(inputVal, function (response) {
+          PGN.core.getData(response);
+        });
+      });
     });
