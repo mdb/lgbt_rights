@@ -1,0 +1,171 @@
+[
+  {"id" : "US",
+    "type" : "country",
+    "rights" : {
+  	  "discriminition": false,
+  	  "marrage" : false,
+  	  "civil union" : false
+  	}
+  },
+  {"id" : "PA",
+    "type" : "state",
+    "rights" : {
+    	"marrage" : false,
+    	"civil union" : false
+    }
+  },
+  {"id" : "PA:Montgomery:Abington",
+    "type" : "city",
+    "rights": {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Allegheny",
+    "type" : "country",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Lehigh:Allentown",
+    "type" : "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Lehigh:Bethlehem",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Northampton:Bethlehem",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Montgomery:Cheltenham",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Montgomery:Conshohocken",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Northampton:Easton",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Erie",
+    "type": "county",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Dauphin:Harrisburg",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Delaware:Haverford",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Lancaster:Lancaster",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Delaware:Lansdowne",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Montgomery:Lower Merion",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Bucks:Newtown",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Bucks:New Hope",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Philadelphia:Philadelphia",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true,
+  	   "domestic_partnership" : true
+    }
+  },
+  {"id" : "PA:Allegheny:Pittsburgh",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true,
+  	  "domestic_partnership" : true
+    }
+  },
+  {"id" : "PA:Berks:Reading",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Lackawanna:Scranton",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Montgomery:Springfield",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Susquehanna",
+    "type": "county",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Chester:Swarthmore",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:Montgomery:Whitemarsh",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  },
+  {"id" : "PA:York:York",
+    "type": "city",
+    "rights" : {
+  	  "discrimination" : true
+    }
+  }
+  
+  
+]
