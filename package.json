@@ -9,6 +9,7 @@
     "express": "3.0.0alpha1",
     "jade": "*",
     "redis-url": "0.1.0",
+    "redis":"*",
     "stylus": "*"
   },
   "engines": {
