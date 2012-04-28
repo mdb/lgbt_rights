@@ -1,8 +1,37 @@
 @import "reset"
+@import "variables"
 
 // utility classes
 .hidden
   display: none
+
+span.button
+  display: block
+  overflow: hidden
+  margin: 0 0 5px 0
+  border: $border
+  color: $text_color
+  background-color: $pale_gray 
+  border-radius: 3px
+  $pale_gradient()
+  font-weight: bold
+  text-align: center
+  text-decoration: none
+  vertical-align: middle
+  line-height: 32px
+  height: 32px
+  cursor: pointer
+  padding: 0 15px
+
+  &:hover
+    cursor: pointer
+  
+body
+  padding: 3%
+  color: $text_color
+
+  a
+    color: $link_color
 
 // header
 header
