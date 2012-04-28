@@ -1,11 +1,17 @@
 extends layout
 
-block scripts
-
 block content
-  span.button Search Address
-  span.button Use Location
-  form.hidden
+  span.button.location Use My Location
+  span.button.address Search By Address
+  form.hidden.address-search
     input
-    input(type='submit')
-    
+    span.button Search
+
+block scripts
+  script(type='text/javascript')
+    $(document).ready(function() {
+      $('span.button.address').click(function() {
+        $('form.address-search').fadeIn('fast');
+      });
+    });
+

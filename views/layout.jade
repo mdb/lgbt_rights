@@ -9,7 +9,6 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyDafRbnFoPXDxj0tmsocGeLHikCJ4Qz-T8&sensor=true')
    
-    block scripts
 
   body
     header
@@ -17,4 +16,6 @@ html
           a(href='/')= title
           em= subtitle
     
-    block content
+    .content
+      block content
+    block scripts
