@@ -28,3 +28,22 @@ exports.load = function(items, fn){
     });
   });
 };
+
+// for this to work better we should really move our data from separate keys to a hash 
+// (or a few hashses, one for each level, perhaps)
+// see: http://stackoverflow.com/questions/10155398/getting-multiple-key-values-from-redis
+exports.list = function(query, fn){
+  var items = {};
+  var pending;
+  redis.keys(query, function(err, keys){
+    if (err) fn(err);
+    pending = keys.length;
+    keys.forEach(function(key){
+      redis.get(key, function(err, value){
+        if (err) fn(err);
+        items[key] = JSON.parse(value);
+        --pending || fn(null, { data: items });
+      });
+    });
+  });
+}

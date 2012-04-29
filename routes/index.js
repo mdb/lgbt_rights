@@ -13,6 +13,12 @@ module.exports = function(app) {
       res.send(data);
     });
   });
+  app.get('/list', express.query(), function(req, res) {
+    var q = typeof(req.query.q) == 'String' ? q : '*'; // wildcard query string for redis.keys
+    db.list(q, function(err, data){
+      res.send(data);
+    });
+  });
   app.post('/load', function(req, res) {
     db.load(req.body, function(err, data){
       if (err) return res.send(err);
