@@ -4,8 +4,8 @@ var express = require('express');
 module.exports = function(app) {
   app.get('/', function(req, res) {
     res.render('index', {
-      title: 'LGBT RightsFinder',
-      subtitle: 'Find your rights in Pennsylvania'
+      title: 'LGBTrights.me',
+      subtitle: 'Rights where you are'
     });
   });
   app.get('/rights', express.query(), function(req, res) {
