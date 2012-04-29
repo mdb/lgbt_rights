@@ -42,7 +42,7 @@ exports.list = function(query, fn){
       redis.get(key, function(err, value){
         if (err) fn(err);
         items[key] = JSON.parse(value);
-        --pending || fn(null, { data: items });
+        --pending || fn(null, { count: keys.length, data: items });
       });
     });
   });
