@@ -40,9 +40,9 @@ bug.
 6. Submit a pull request.
 
 ## Requirements
-- [Node.js](nodejs.org)
-- [Node Package Manager](npmjs.org) (to install dependencies)
-- [Redis](redis.io)
+- [Node.js](http://nodejs.org)
+- [Node Package Manager](http://npmjs.org) (to install dependencies)
+- [Redis](http://redis.io)
 
 ## Installation
 	# Run Redis server
