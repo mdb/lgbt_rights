@@ -1,6 +1,5 @@
-#LGBTRights.me
-
-##A web app to report LBGT rights based on the user's location.
+#[LGBTRights.me](LGBTrights.me)
+####A web app to report LBGT rights based on the user's location.
 
 ## <a name="contributing"></a>Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
@@ -38,9 +37,14 @@ bug report should include a pull request with failing specs.
 1. Fork the project.
 2. Create a topic branch.
 3. Implement your feature or bug fix.
-4. Add tests for your feature or bug fix (heh).
+4. { Add tests for your feature or bug fix } (someday).
 5. Commit and push your changes.
 6. Submit a pull request.
+
+## Requirements
+- [Node.js](nodejs.org)
+- [Node Package Manager](npmjs.org) (to install dependencies)
+- [Redis](redis.io)
 
 ## Loading data
 To load the locality data do the following:
