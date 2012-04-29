@@ -3,10 +3,10 @@ extends layout
 block content
   span.button.location Use My Location
   span.button.address Search By Address
-  h2.user-location
   form.hidden.address-search
     input
     span.button Search
+  h2.user-location
   ul.rights
 
 block scripts
@@ -14,6 +14,7 @@ block scripts
     $(document).ready(function() {
       $('span.button.address').click(function() {
         PGN.core.clear();
+        $(this).hide('fast');
         $('form.address-search').fadeIn('fast');
       });
       
@@ -28,8 +29,8 @@ block scripts
         });
       });
 
-      $('form.address-search span.button').click(function () {
-        event.preventDefault();
+      $('form.address-search span.button').click(function (evt) {
+        evt.preventDefault();
         PGN.core.clear();
 
         var inputVal = $('form.address-search input').val();
