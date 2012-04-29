@@ -9,6 +9,7 @@ improve this project.
 
 Here are some ways *you* can contribute:
 
+* by collecting/adding data! (See [data.json](https://github.com/mdb/lgbt_rights/blob/master/public/javascripts/data/data.json) for current formatting)
 * by reporting [bugs][issues]
 * by suggesting new features
 * by writing or editing documentation
@@ -42,6 +43,18 @@ bug.
 - [Node.js](nodejs.org)
 - [Node Package Manager](npmjs.org) (to install dependencies)
 - [Redis](redis.io)
+
+## Installation
+	# Run Redis server
+	$ redis-server
+	# Clone the repo
+	$ git clone git://github.com/mdb/lgbt_rights.git
+	$ cd lgbt_rights
+	# install dependcies
+	$ npm install
+	# run the express.js server using node
+	$ node app.js
+	
 
 ## Loading data
 To load the locality data do the following:
