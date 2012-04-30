@@ -26,33 +26,44 @@ span.button
     cursor: pointer
   
 body
-  font-family: Helvetica, Arial, sans-serif
+  font-family: 'Droid Serif', Helvetica, Arial, sans-serif
   color: $text_color
   a
     color: $link_color
 
 // header
 header
-  padding: 3%
+  padding: 3% 3% 15px 3%
   h1
     a
       display: block
-      margin: 0 auto;
-      font-weight: bold
       text-decoration: none
-      background: url('/images/lgbtrights-rainbow-tag.png')
-      display: block
-      width: 300px
-      height: 150px
-      text-indent: -5000px
-    em
-      display: none
+      text-align: center
+      font-weight: bold
+
+      b.mark
+        margin: 0 auto;
+        background: url('/images/logo.png')
+        display: block
+        width: 180px
+        height: 195px
+        margin-bottom: 10px
+
+      span
+        font-weight: normal
+        padding-left: .15em
+
+      em
+        display: block
+        font-style: italic
+        font-weight: 400
+        color: #777
    
 .content
   padding: 0 3%
 
   h2
-    line-height: 1.2em
+    line-height: 1.3em
     margin-bottom: 10px
 
   ul.rights
