@@ -3,8 +3,9 @@ html
   head
     title= title
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic')
     link(rel='stylesheet', href='/stylesheets/style.css')
+
     script(src='javascripts/contrib/underscore-min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyDafRbnFoPXDxj0tmsocGeLHikCJ4Qz-T8&sensor=true')
@@ -14,8 +15,12 @@ html
   body
     header
       h1
-        a(href='/')= title
-        em= subtitle
+        a(href='/')
+          b.mark
+          = 'LGBT'
+            span
+              = 'rights.me'
+          em= subtitle
     
     .content
       block content
