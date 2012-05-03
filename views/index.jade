@@ -6,7 +6,8 @@ block content
   form.hidden.address-search
     input
     span.button Search
-  h2.user-location
+  h2.user-location Current Location
+  p.address
   ul.rights
 
 block scripts
@@ -22,7 +23,8 @@ block scripts
         PGN.core.clear();
         PGN.geo.getUserLocation(function () {
           PGN.geo.reverseGeocode(PGN.userLocation, function (response) {
-            $('h2.user-location').html('Current Location: <br />' + response[0].formatted_address.replace(/,/g, '<br />'));
+            $('h2.user-location').addClass('visible');
+            $('p.address').html(response[0].formatted_address.replace(/,/g, '<br />'));
             var params = PGN.geo.parseResp(response[0]);
             PGN.core.getData(params);
           });
@@ -35,7 +37,8 @@ block scripts
 
         var inputVal = $('form.address-search input').val();
         PGN.geo.geocode(inputVal, function (response) {
-          $('h2.user-location').html('Current Location: <br />' + response[0].formatted_address.replace(/,/g, '<br />'));
+          $('h2.user-location').addClass('visible');
+          $('p.address').html(response[0].formatted_address.replace(/,/g, '<br />'));
           var params = PGN.geo.parseResp(response[0]);
           PGN.core.getData(params);
         });
