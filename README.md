@@ -1,7 +1,9 @@
 #[LGBTrights.me](LGBTrights.me)
 ####A web app to report LBGT rights based on the user's location.
 
-LGBTrights was built in April 2012 during Philadelphia Barcamp News Innovation's Hackathon at Temple University. The project won second place.
+LGBTrights was built in April 2012 during Philadelphia Barcamp News Innovation's Hackathon at Temple University.
+
+The project won second place.
 
 ## <a name="contributing"></a>Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
