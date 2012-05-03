@@ -72,7 +72,8 @@ PGN.core = (function ($) {
       },
 
       clear: function () {
-        $('h2.user-location').html('');
+        $('h2.user-location').removeClass('visible');
+        $('p.address').html('');
         $('ul.rights li').remove();
       }
   };
