@@ -1,6 +1,8 @@
 #[LGBTrights.me](LGBTrights.me)
 ####A web app to report LBGT rights based on the user's location.
 
+####NOTE: The source is now hosted on Code for America's [CfABrigadePhiladelphia Github account](https://github.com/CfABrigadePhiladelphia/lgbt-rights).
+
 LGBTrights was built in April 2012 during Philadelphia Barcamp News Innovation's Hackathon at Temple University.
 
 The project won second place.
